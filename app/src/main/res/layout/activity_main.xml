@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mobdev.lab4.MainActivity">
+
+
+    <EditText
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:inputType="textCapSentences"
+        android:id="@+id/edit_msg"
+        android:hint="Enter a message"
+         />
+
+    <Button
+        android:id="@+id/show_button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:onClick="show_msg"
+        android:layout_marginLeft="280dp"
+        android:text="Show" />
+    <EditText
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:layout_marginTop="60dp"
+        android:id="@+id/edit_email"
+        android:inputType="textPassword"
+        android:hint="Enter a pass"
+        />
+    <EditText
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:layout_marginTop="120dp"
+        android:id="@+id/edit_phonekey"
+        android:inputType="textEmailAddress"
+        android:hint="Enter a email"
+        />
+
+    <EditText
+        android:id="@+id/edit_phone"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/show_pho"
+        android:layout_alignBottom="@+id/show_pho"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="Enter a phone keyboard"
+        android:inputType="number"
+        android:textAllCaps="true" />
+    <Button
+        android:id="@+id/show_pho"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:onClick="show_phone"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="280dp"
+        android:text="Show in Spinner" />
+
+    <Spinner
+        android:id="@+id/spinner_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/show_pho"
+        android:layout_marginTop="29dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/show_pho"
+        android:layout_alignRight="@+id/show_pho"
+        android:layout_below="@+id/spinner_view"
+        android:id="@+id/shoview"
+        android:layout_marginTop="51dp"
+        android:textSize="20sp"
+        android:text="Show" />
+
+</RelativeLayout>

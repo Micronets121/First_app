@@ -15,14 +15,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-Button btn,show_spin;EditText e1,e2; final List<String> list = new ArrayList<String>();
+Button btn,show_spin;EditText e1,e23; final List<String> list = new ArrayList<String>();
 Spinner spinner;TextView t1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         e1 = (EditText) findViewById(R.id.edit_msg);
-        e2 = (EditText) findViewById(R.id.edit_phone);
+        e23 = (EditText) findViewById(R.id.edit_phone);
         btn = (Button) findViewById(R.id.show_button);
         t1=(TextView)findViewById(R.id.shoview);
         show_spin = (Button) findViewById(R.id.show_pho);
